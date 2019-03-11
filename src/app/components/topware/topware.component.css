@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.example-card {
+    max-width: 180px;
+    /* box-shadow: 1px 1px 0px 0px black; */
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .products{
+    margin-top: 20px;
+  }
+
+  .mat-butto{
+    background-color:blueviolet;
+    color: white;
+    
+  }
+
+  @media screen and(min-width:300px)and(max-width:500px){
+    .products{
+      margin: 0px;
+    }
+  }

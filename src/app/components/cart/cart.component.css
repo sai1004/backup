@@ -1,0 +1,15 @@
+/* .cart-card{
+
+  height: 400px;
+  width:600px;
+
+} */
+
+.example-card {
+  max-width: 900px;
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 100%;
+  width: 90%;
+  /* box-shadow: 1px 1px 0px 0px black; */
+}

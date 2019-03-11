@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+
+  <mat-card>
+    <div class="example-container">
+      
+        <mat-form-field>
+            <input matInput placeholder="Email" type="email">
+          </mat-form-field>
+      
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide"> </mat-icon>
+      </mat-form-field>
+
+      
+    </div>
+
+  </mat-card>
+</div>

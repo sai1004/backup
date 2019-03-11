@@ -1,0 +1,40 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav color="primary" #sidenav mode="side" opened="false" class="sidenav">
+        <div class="menu">
+        <mat-toolbar style='background-color: blueviolet'>Menu</mat-toolbar>
+        <mat-list>
+            <mat-nav-list> <a mat-list-item routerLink='/topware'> Mobiles</a></mat-nav-list>
+            <mat-nav-list> <a mat-list-item routerLink='/bottomware'>Laptops</a></mat-nav-list>
+            <mat-nav-list> <a mat-list-item routerLink='/footware'>Desktops</a></mat-nav-list>
+        </mat-list>
+    </div>
+    </mat-sidenav>
+
+    <mat-toolbar class="icons" style='background-color: blueviolet' fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-icon svgIcon="menuIcon" (click)="sidenav.toggle()"></mat-icon>
+        <img src="https://www.tsawwassenmills.com/media/stores/logos/Rogers-phone-cellphone-internet-wireless-tv-logo_mn8KsfA.svg"
+            alt="logo" height="50px" width="200px">
+        <input type="search" name="search" id="search" class="search" placeholder="search products here" autocomplete="off">
+        
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="pro">
+            <h1> Profile </h1>
+        </div>
+            <a routerLink="profile">
+                <div mat-card-avatar class="proimg"></div>
+            </a>
+
+        </div>
+   
+    <div class="cart">
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+            <h4>Cart</h4>
+
+            <a routerLink="/cart"> <img src="..//assets/68-256.png" alt="cart" height="40px" width="50px" (click)="getTotalCost()"> </a>
+
+        </div>
+    </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+
+</mat-sidenav-container>

@@ -1,0 +1,23 @@
+<div class="products" fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxLayout.md="row" fxLayoutWrap
+  fxLayoutGap="2%" fxLayoutAlign="center">
+
+  <mat-card class="example-card" fxFlex="20%" *ngFor="let item of products">
+    
+    <img mat-card-image src="{{ item.p_img }}" alt="Photo of a Shiba Inu" height="250px" width="180px">
+   
+    <mat-card-content>
+      <div>
+        <p><b>{{ item.p_name }}</b></p>
+        <p>{{ item.p_model }}</p>
+      </div>
+
+      <p>$ 64</p> <span> <del> $99 </del> 35% off </span>
+    </mat-card-content>
+
+    <mat-card-actions fxLayout="row" fxLayoutAlign="space-around center" style="color:white">
+      <button mat-button class="mat-butto" (click)=addToCart(item)>ADD</button>
+      <a routerLink="/cart"> <button mat-button class="mat-butto">Go To Cart</button></a>
+    </mat-card-actions>
+
+  </mat-card>
+</div>

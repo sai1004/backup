@@ -1,0 +1,41 @@
+<!-- <mat-card class="example-card"> -->
+<div  fxLayout="row" fxLayoutAlign="space-around center">
+
+  <img src="https://cdn.dribbble.com/users/844846/screenshots/2981974/empty_cart_800x600_dribbble.png" height="500px" width="500px">
+
+
+</div>
+
+
+
+<div *ngFor=" let item of cartItems ">
+
+  <mat-card class="" height="600px" fxLayout="row" fxLayoutAlign="space-evenly center">
+    <div fxLayout="row" fxLayoutAlign="space-evenly center">
+
+      <img src="{{ item.p_img }}" height="160px" width="120px">
+
+      <div style="margin:10px" fxLayout="column">
+        <h3> {{ item.p_name }} </h3>
+
+        <p style="margin-bottom:30px"> {{ item.p_model }} </p>
+
+        <p> Product Id: {{item.p_id}}</p>
+
+      </div>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
+
+      <p> price </p>
+      <h5> {{ item.p_price }} </h5>
+
+    </div>
+
+  </mat-card>
+
+
+</div>
+<!-- <button mat-button> Proced to checkout </button> -->
+
+<!-- </mat-card> -->
